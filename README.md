@@ -1,35 +1,36 @@
 # Financial-Planning-for-Credit-Unions
-![Financial Planner](Images/financial-planner.png)
+![Finac_plan](https://user-images.githubusercontent.com/83671629/121417639-20c40180-c938-11eb-8dd7-1fbbd321cb22.jpg)
+
 
 ## Background
 
-You decided to start a FinTech consultancy firm, and you want to make a difference by working on projects with high social impact in local communities. You just won your first contract to help one of the biggest credit unions in your area. They want to create a tool that helps their members enhance their financial health. The Chief Technology Officer (CTO) of the credit union asked you to develop a prototype application to demo in the next credit union assembly.
+With my new FinTech consultancy firm, I want to make a difference by working on projects with high social impact in local communities. I won my first contract to help one of the biggest credit unions in the area. I created a tool that helps the members of Credit Union company to enhance their financial health. As per the request of The Chief Technology Officer (CTO) of the credit union, I have developed a prototype application to demo in the next credit union assembly.
 
 The credit union board wants to allow the union's members to assess their monthly personal finances, and also be able to forecast a reasonably good retirement plan based on cryptocurrencies, stocks, and bonds.
 
-In this homework activity, you will use all the skills you have learned until now - focusing on using APIs as part of the technical solution - to create two financial analysis tools.
+In this tool, I have used all the skills I learnt until now - focusing on using APIs as part of the technical solution - to create two financial analysis tools.
 
-The first will be a personal finance planner that will allow users to visualize their savings composed by investments in shares and cryptocurrencies to assess if they have enough money as an emergency fund.
+The first tool is a personal finance planner that will allow users to visualize their savings composed by investments in shares and cryptocurrencies to assess if they have enough money as an emergency fund.
 
-The second tool will be a retirement planning tool that will use the Alpaca API to fetch historical closing prices for a retirement portfolio composed of stocks and bonds, then run Monte Carlo simulations to project the portfolio performance at 30 years. You will then use the Monte Carlo data to calculate the expected portfolio returns given a specific initial investment amount.
+The second tool will be a retirement planning tool that will use the Alpaca API to fetch historical closing prices for a retirement portfolio composed of stocks and bonds, then run Monte Carlo simulations to project the portfolio performance at 30 years. I have used the Monte Carlo data to calculate the expected portfolio returns given a specific initial investment amount.
 
 ---
 
 ### Files
 
-* [Personal Finance Planner starter code](Starter_Code/financial-planner.ipynb)
+* [Personal Finance Planner starter code](financial-planner.ipynb)
 
-* [MCForecastTools toolkit](Starter_Code/MCForecastTools.py)
+* [MCForecastTools toolkit](MCForecastTools.py)
 
 ---
 
 ### Resources
 
-This homework will utilize two APIs:
+This Tool will utilize two APIs:
 
-* The **Alpaca Markets API** will be used to pull historical stocks and bonds information.  
+* The **Alpaca Markets API** is used to pull historical stocks and bonds information.  
     
-* The **Alternative Free Crypto API** will be used to retrieve Bitcoin and Ethereum prices.
+* The **Alternative Free Crypto API** is used to retrieve Bitcoin and Ethereum prices.
 
 The documentation for these APIs can be found via the following links:
 
@@ -38,65 +39,63 @@ The documentation for these APIs can be found via the following links:
 * [AlpacaDOCS](https://alpaca.markets/docs/)
 ---
 
-## Instructions
+## Procedure
 
 ### Part 1 - Personal Finance Planner
 
-In this section of the challenge, you will create a personal finance planner application. To develop the personal finance planner prototype, you should take into account the following assumptions:
+In this tool I have created a personal finance planner application. To develop the personal finance planner prototype, the following assumptions are taken into account :
 
 * The average household income for each member of the credit union is $12,000.
 
 * Every union member has a savings portfolio composed of cryptocurrencies, stocks and bonds:
 
-    * Assume the following amount of crypto assets: `1.2` BTC and `5.3` ETH.
+    * Assumed the following amount of crypto assets: `1.2` BTC and `5.3` ETH.
 
-    * Assume the following amount of shares in stocks and bonds: `50` SPY (stocks) and `200` AGG (bonds).
+    * Assumed the following amount of shares in stocks and bonds: `50` SPY (stocks) and `200` AGG (bonds).
 
-Use the starter Jupyter notebook to complete the following steps.
 
-#### Collect Crypto Prices Using the `requests` Library
 
-1. Create two variables called `my_btc` and `my_eth`. Set them equal to `1.2` and `5.3`, respectively.
+#### Collecting Crypto Prices Using the `requests` Library
 
-2. Use the `requests` library to fetch the current price in Canadian dollars of bitcoin (`BTC`) and ethereum (`ETH`) using the **Alternative Free Crypto API** endpoints provided in the starter notebook.
+1. I created two variables called `my_btc` and `my_eth`. Set them equal to `1.2` and `5.3`, respectively.
 
-3. Parse the API JSON response to select only the crypto prices and store each price in a variable.
+2. Useing the `requests` library I fetched the current price in Canadian dollars of bitcoin (`BTC`) and ethereum (`ETH`) using the **Alternative Free Crypto API** for the endpoints.
 
-    **Hint:** Be aware of the particular identifier for each cryptocurrency in the API JSON response - the bitcoin identifier is `1` whereas ethereum is `1027`.
+3. Parse the API JSON response to select only the crypto prices and stored each price in a variable.
 
-4. Compute the portfolio value of cryptocurrencies and print the results.
+    (the identifier for each cryptocurrency in the API JSON response - the bitcoin identifier is `1` and ethereum is `1027`.)
 
-#### Collect Investments Data Using Alpaca: `SPY` (stocks) and `AGG` (bonds)
+4. I Computed the portfolio value of cryptocurrencies and printed the results.
 
-**Important:** Remember to create a `.env` file in your working directory to store the values of your Alpaca API key and Alpaca secret key.
+#### Collecting Investments Data Using Alpaca: `SPY` (stocks) and `AGG` (bonds)
 
-1. Create two variables named `my_agg` and `my_spy` and set them equal to `200` and `50`, respectively.
 
-2. Set the Alpaca API key and secret key variables, then create the Alpaca API object using the `tradeapi.REST` function from the Alpaca SDK.
+1. Created two variables named `my_agg` and `my_spy` and set them equal to `200` and `50`, respectively.
 
-3. Format the current date as ISO format. You may change the date set in the starter code to the current date.
+2. I set the Alpaca API key and secret key variables, then created the Alpaca API object using the `tradeapi.REST` function from the Alpaca SDK.
 
-4. Get the current closing prices for `SPY` and `AGG` using Alpaca's `get_barset()` function. Transform the function's response to a Pandas DataFrame and preview the data.
+3. Formated the current date as ISO format. 
 
-5. Pick the `SPY` and `AGG` close prices from the Alpaca's `get_barset()` DataFrame response and store them as Python variables. Print the closing values for validation. Make sure to add the parameter `limit=1000` to the function call in order to receive back as much data from Alpaca as possible.
+4. After geting the current closing prices for `SPY` and `AGG` using Alpaca's `get_barset()` function, I transformed the function's response to a Pandas DataFrame and previewed the data.
 
-6. Compute the value in dollars of the current amount of shares and print the results.
+5. I picked the `SPY` and `AGG` close prices from the Alpaca's `get_barset()` DataFrame response and stored them as Python variables. Printed the closing values for validation. Added the parameter `limit=1000` to the function call in order to receive back as much data from Alpaca as possible.
+
+6. Computed the value in dollars of the current amount of shares and printed the results.
 
 #### Savings Health Analysis
 
-In this section, you will assess the financial health of the credit union's members.
+In this task, the financial health of the credit union's members can be assessed.
 
-1. Create a variable called `monthly_income` and set its value to `12000`.
+1. I created a variable called `monthly_income` and set its value to `12000`.
 
-2. To analyze savings health, create a DataFrame called `df_savings` with two rows. Store the total value in dollars of the crypto assets in the first row and the total value of the shares in the second row.
+2. To analyze savings health, I created a DataFrame called `df_savings` with two rows. Stored the total value in dollars of the crypto assets in the first row and the total value of the shares in the second row.
 
-    **Hint:** The `df_savings` DataFrame should have one column named `amount` and two rows where `crypto` and `shares` are the index values: 
-    
+   
     ![df_savings](Images/df_savings.png)
 
-3. Use the `df_savings` DataFrame to plot a pie chart to visualize the composition of personal savings.
+3. Used the `df_savings` DataFrame to plot a pie chart to visualize the composition of personal savings.
 
-4. Use `if` conditional statements to validate if the current savings are enough for an emergency fund. An ideal emergency fund should be equal to three times your monthly income.
+4. Useing `if` conditional statements I validated, if the current savings are enough for an emergency fund. An ideal emergency fund should be equal to three times your monthly income.
 
     * If total savings are greater than the emergency fund, display a message congratulating the person for having enough money in this fund.
 
