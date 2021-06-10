@@ -4,7 +4,7 @@
 
 ## Background
 
-With my new FinTech consultancy firm, I want to make a difference by working on projects with high social impact in local communities. I won my first contract to help one of the biggest credit unions in the area. I created a tool that helps the members of Credit Union company to enhance their financial health. As per the request of The Chief Technology Officer (CTO) of the credit union, I have developed a prototype application to demo in the next credit union assembly.
+With my new FinTech consultancy firm, I want to make a difference by working on projects with high social impact in local communities. I won my first contract to help one of the biggest credit unions in the area. I created a tool that helps the members of a Credit Union company to enhance their financial health. As per the request of The Chief Technology Officer (CTO) of the credit union, I have developed a prototype application to demo in the next credit union assembly.
 
 The credit union board wants to allow the union's members to assess their monthly personal finances, and also be able to forecast a reasonably good retirement plan based on cryptocurrencies, stocks, and bonds.
 
@@ -59,9 +59,9 @@ In this tool I have created a personal finance planner application. To develop t
 
 1. I created two variables called `my_btc` and `my_eth`. Set them equal to `1.2` and `5.3`, respectively.
 
-2. Useing the `requests` library I fetched the current price in Canadian dollars of bitcoin (`BTC`) and ethereum (`ETH`) using the **Alternative Free Crypto API** for the endpoints.
+2. Using the `requests` library I fetched the current price in Canadian dollars of bitcoin (`BTC`) and ethereum (`ETH`) using the **Alternative Free Crypto API** for the endpoints.
 
-3. Parse the API JSON response to select only the crypto prices and stored each price in a variable.
+3. Parse the API JSON response to select only the crypto prices and store each price in a variable.
 
     (the identifier for each cryptocurrency in the API JSON response - the bitcoin identifier is `1` and ethereum is `1027`.)
 
@@ -76,7 +76,7 @@ In this tool I have created a personal finance planner application. To develop t
 
 3. Formated the current date as ISO format. 
 
-4. After geting the current closing prices for `SPY` and `AGG` using Alpaca's `get_barset()` function, I transformed the function's response to a Pandas DataFrame and previewed the data.
+4. After getting the current closing prices for `SPY` and `AGG` using Alpaca's `get_barset()` function, I transformed the function's response to a Pandas DataFrame and previewed the data.
 
 5. I picked the `SPY` and `AGG` close prices from the Alpaca's `get_barset()` DataFrame response and stored them as Python variables. Printed the closing values for validation. Added the parameter `limit=1000` to the function call in order to receive back as much data from Alpaca as possible.
 
@@ -94,7 +94,7 @@ In this task, the financial health of the credit union's members can be assessed
 
 3. Used the `df_savings` DataFrame to plot a pie chart to visualize the composition of personal savings.
 
-4. Useing `if` conditional statements I validated, if the current savings are enough for an emergency fund. An ideal emergency fund should be equal to three times your monthly income.
+4. Using `if` conditional statements I validated, if the current savings are enough for an emergency fund. An ideal emergency fund should be equal to three times your monthly income.
 
     * If total savings are greater than the emergency fund, display a message congratulating the person for having enough money in this fund.
 
@@ -115,7 +115,7 @@ In this section, I used the Alpaca API to fetch historical closing prices for a 
 
 2. Configured and executed a Monte Carlo Simulation of `500` runs and `30` years for the `40/60` portfolio.
 
-3. Ploted the simulation results and the probability distribution/confidence intervals.
+3. Plotted the simulation results and the probability distribution/confidence intervals.
 
     ![montecarlo](/Images/monte-carlo.png)
         
