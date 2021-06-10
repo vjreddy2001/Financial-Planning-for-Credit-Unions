@@ -105,12 +105,12 @@ In this task, the financial health of the credit union's members can be assessed
 
 ### Part 2 - Retirement Planning
 
-In this section, used the Alpaca API to fetch historical closing prices for a retirement portfolio and then used the MCForecastTools toolkit to create Monte Carlo simulations to project the portfolio performance at `30` years. Using the Monte Carlo data the following were concluded about the portfolio.
+In this section, I used the Alpaca API to fetch historical closing prices for a retirement portfolio and then used the MCForecastTools toolkit to create Monte Carlo simulations to project the portfolio performance at `30` years. Using the Monte Carlo data the following were concluded about the portfolio.
 
 
 #### Monte Carlo Simulation
 
-1. Used the Alpaca API to fetch five years historical closing prices for a traditional `40/60` portfolio using the `SPY` and `AGG` tickers to represent the `60%` stocks (`SPY`) and `40%` bonds (`AGG`) composition of the portfolio. Converted the API output to a DataFrame and previewed the output.
+1. I used the Alpaca API to fetch five years historical closing prices for a traditional `40/60` portfolio using the `SPY` and `AGG` tickers to represent the `60%` stocks (`SPY`) and `40%` bonds (`AGG`) composition of the portfolio. Converted the API output to a DataFrame and previewed the output.
 
     (used the parameter `limit=1000` to ensure you get the most data possible back from the API. In Monte-Carlo Simulation, getting data as far back as possible matters, because if we simulate using only small amounts of data during a recent time when markets are booming, or instead falling precipitously, a Monte-Carlo Analysis will inadvertently extrapolate this temporary market movement too far into the future. Getting data over a longer time period mitigates this effect)
 
@@ -118,23 +118,23 @@ In this section, used the Alpaca API to fetch historical closing prices for a re
 
 3. Ploted the simulation results and the probability distribution/confidence intervals.
 
-    ![monte carlo](Images/monte-carlo.png)
+    ![montecarlo](/Images/monte-carlo.png)
         
-    ![histogram](Images/histogram.png)
+    ![dist](/Images/dist.png)
 
 #### Retirement Analysis
 
-1. Fetch the summary statistics from the Monte Carlo simulation results.
+1. Fetched the summary statistics from the Monte Carlo simulation results.
 
-1. Given an initial investment of `$20,000`, calculate the expected portfolio return in dollars at the `95%` lower and upper confidence intervals.
+1. With an initial investment of `$20,000`, calculated the expected portfolio return in dollars at the `95%` lower and upper confidence intervals.
 
-2. Calculate the expected portfolio return at the `95%` lower and upper confidence intervals based on a `50%` increase in the initial investment.
+2. Calculated the expected portfolio return at the `95%` lower and upper confidence intervals based on a `50%` increase in the initial investment.
 
 ### Optional Challenge - Early Retirement
 
-The CTO of the Credit Union was really impressed with your work on this planner, but commented that `30` years seems like such a long time to wait to retire! The CTO starts wondering if the retirement plan could be adjusted to account for an earlier than normal retirement.
+The CTO of the Credit Union was really impressed with my work on this planner, but commented that `30` years seems like such a long time to wait to retire! The CTO was wondering if the retirement plan could be adjusted to account for an earlier than normal retirement.
 
-Try adjusting the portfolio to either include more risk (a higher stock than bond ratio) or to have a larger initial investment and rerun the retirement analysis to see what it would take to retire in `5` or `10` years instead of `30`!
+After adjusting the portfolio to either include a larger initial investment of $60,000, I reran the retirement analysis to see what it would take to retire in `5` or `10` years instead of `30`!
 
 ---
 
