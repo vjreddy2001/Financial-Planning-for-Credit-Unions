@@ -1,5 +1,5 @@
 # Financial-Planning-for-Credit-Unions
-![Finac_plan](https://user-images.githubusercontent.com/83671629/121417639-20c40180-c938-11eb-8dd7-1fbbd321cb22.jpg)
+![Finac_plan](/Images/)
 
 
 ## Background
