@@ -105,19 +105,18 @@ In this task, the financial health of the credit union's members can be assessed
 
 ### Part 2 - Retirement Planning
 
-In this section, you will use the Alpaca API to fetch historical closing prices for a retirement portfolio and then Use the MCForecastTools toolkit to create Monte Carlo simulations to project the portfolio performance at `30` years. You will then use the Monte Carlo data to answer questions about the portfolio.
+In this section, used the Alpaca API to fetch historical closing prices for a retirement portfolio and then used the MCForecastTools toolkit to create Monte Carlo simulations to project the portfolio performance at `30` years. Using the Monte Carlo data the following were concluded about the portfolio.
 
-Follow the steps outlined in the starter notebook to complete the following:
 
 #### Monte Carlo Simulation
 
-1. Use the Alpaca API to fetch five years historical closing prices for a traditional `40/60` portfolio using the `SPY` and `AGG` tickers to represent the `60%` stocks (`SPY`) and `40%` bonds (`AGG`) composition of the portfolio. Make sure to convert the API output to a DataFrame and preview the output.
+1. Used the Alpaca API to fetch five years historical closing prices for a traditional `40/60` portfolio using the `SPY` and `AGG` tickers to represent the `60%` stocks (`SPY`) and `40%` bonds (`AGG`) composition of the portfolio. Converted the API output to a DataFrame and previewed the output.
 
-    > *Note*: As before, use the parameter `limit=1000` to ensure you get the most data possible back from the API. In Monte-Carlo Simulation, getting data as far back as possible matters, because if we simulate using only small amounts of data during a recent time when markets are booming, or instead falling precipitously, a Monte-Carlo Analysis will inadvertently extrapolate this temporary market movement too far into the future. Getting data over a longer time period mitigates this effect.
+    (used the parameter `limit=1000` to ensure you get the most data possible back from the API. In Monte-Carlo Simulation, getting data as far back as possible matters, because if we simulate using only small amounts of data during a recent time when markets are booming, or instead falling precipitously, a Monte-Carlo Analysis will inadvertently extrapolate this temporary market movement too far into the future. Getting data over a longer time period mitigates this effect)
 
-2. Configure and execute a Monte Carlo Simulation of `500` runs and `30` years for the `40/60` portfolio.
+2. Configured and executed a Monte Carlo Simulation of `500` runs and `30` years for the `40/60` portfolio.
 
-3. Plot the simulation results and the probability distribution/confidence intervals.
+3. Ploted the simulation results and the probability distribution/confidence intervals.
 
     ![monte carlo](Images/monte-carlo.png)
         
