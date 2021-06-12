@@ -90,7 +90,12 @@ In this task, the financial health of the credit union's members can be assessed
 
 2. To analyze savings health, I created a DataFrame called `df_savings` with two rows. Stored the total value in dollars of the crypto assets in the first row and the total value of the shares in the second row.
   
-![savings](/Images/df_savings.jpg)
+    Amount
+
+    crypto	69518.908734
+
+    shares	44061.500000
+
 
 3. Used the `df_savings` DataFrame to plot a pie chart to visualize the composition of personal savings.
 
