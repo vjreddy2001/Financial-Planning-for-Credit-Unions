@@ -133,7 +133,7 @@ In this section, I used the Alpaca API to fetch historical closing prices for a 
 
 The CTO of the Credit Union was really impressed with my work on this planner, but commented that `30` years seems like such a long time to wait to retire! The CTO was wondering if the retirement plan could be adjusted to account for an earlier than normal retirement.
 
-After adjusting the portfolio to either include a larger initial investment of $60,000, I reran the retirement analysis to see what it would take to retire in `5` or `10` years instead of `30`!
+After adjusting the portfolio to include a larger initial investment of $60,000, I reran the retirement analysis to see what it would take to retire in `5` or `10` years instead of `30`! The 5 year retirement plan looks better with no loss but a good amount of gain.
 
 ---
 
